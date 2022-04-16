@@ -24,13 +24,14 @@ while True:
     if PASSWORD_LENGTH == '':
         break
     else:
-        continue
+        pass
     
     # print [0] of the password
     print(f"{Fore.WHITE}{FIRST_CHARACTER}", end="")
     # generate the rest of the password
-    for _ in range(int(PASSWORD_LENGTH - 1)):
+    for _ in range(int(PASSWORD_LENGTH) - 1):
         REST = random.choice(ALL_CHARACTERS)
         print(REST, end="")
 
     print()
+    
