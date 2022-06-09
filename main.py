@@ -9,7 +9,7 @@ import random
 colorama.init()
 
 # define arguements for argparse
-parser = argparse.ArgumentParser(description='A password generator')
+parser = argparse.ArgumentParser(description='A password generator\nexample: main.py 10')
 parser.add_argument('password_length', type=int, help='Enter the the desired password length')
 args = parser.parse_args()
 
